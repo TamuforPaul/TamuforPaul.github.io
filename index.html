@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Paul T.'s Data Analytics Portfolio featuring Power BI projects, data modeling, DAX, and business insights.">
+  <title>Paul T. | Data Analytics Portfolio</title>
+  <style>
+    :root {
+      --navy: #143f69;
+      --blue: #1686e5;
+      --lavender: #e6e7f5;
+      --ink: #17263b;
+      --muted: #58677b;
+      --bg: #f5f7fb;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+    header {
+      background: white;
+      padding: 15px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 12px #102b4b12;
+    }
+    .brand { color: var(--navy); font-size: 19px; font-weight: 800; }
+    nav a {
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 600;
+      margin-left: 18px;
+    }
+    nav a:hover { color: var(--blue); }
+    .hero {
+      padding: 85px 7%;
+      background: linear-gradient(125deg, #123b66, #236da0);
+      color: white;
+    }
+    .hero .tag { color: #b9dfff; font-weight: 700; letter-spacing: 2px; }
+    h1 { font-size: clamp(34px, 5vw, 56px); line-height: 1.15; margin: 15px 0; }
+    .hero p { max-width: 700px; font-size: 18px; color: #e4eef9; }
+    .button {
+      display: inline-block;
+      background: var(--blue);
+      padding: 12px 22px;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 18px;
+    }
+    .button:hover { background: #086bbd; }
+    main { max-width: 1140px; margin: auto; padding: 15px 22px 70px; }
+    section { margin-top: 65px; }
+    h2 { color: var(--navy); font-size: 29px; margin-bottom: 14px; }
+    h3 { color: var(--navy); margin: 10px 0; }
+    .intro { max-width: 820px; color: var(--muted); }
+    .skills { display: flex; flex-wrap: wrap; gap: 12px; }
+    .skill {
+      background: white;
+      border: 1px solid #dae3f0;
+      color: var(--navy);
+      padding: 10px 16px;
+      border-radius: 30px;
+      font-weight: 600;
+    }
+    .project {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      border: 1px solid #e1e7f0;
+      box-shadow: 0 6px 25px #102b4b0d;
+    }
+    .project-top {
+      background: var(--lavender);
+      padding: 24px;
+    }
+    .project-body { padding: 26px; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin: 22px 0;
+    }
+    .stat {
+      background: #edf4fd;
+      border-radius: 10px;
+      padding: 18px 12px;
+      text-align: center;
+    }
+    .stat strong {
+      display: block;
+      color: var(--navy);
+      font-size: 23px;
+    }
+    .stat span { font-size: 13px; color: var(--muted); }
+    .insights { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .insight {
+      background: white;
+      border-left: 4px solid var(--blue);
+      padding: 22px;
+      border-radius: 9px;
+      box-shadow: 0 3px 15px #102b4b0a;
+    }
+    .insight p { margin-bottom: 0; color: var(--muted); }
+    .note { color: var(--muted); font-size: 14px; margin-top: 20px; }
+    .contact {
+      padding: 30px;
+      border-radius: 14px;
+      background: var(--lavender);
+    }
+    footer {
+      text-align: center;
+      padding: 26px;
+      background: var(--navy);
+      color: white;
+    }
+    @media (max-width: 750px) {
+      .stats, .insights { grid-template-columns: 1fr 1fr; }
+      nav a { margin: 0 14px 0 0; }
+    }
+    @media (max-width: 480px) {
+      .stats, .insights { grid-template-columns: 1fr; }
+      .hero { padding: 55px 7%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Paul T. | Data Analytics</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="tag">DATA ANALYTICS PORTFOLIO</div>
+    <h1>Turning Data Into<br>Business Insights.</h1>
+    <p>
+      Welcome to my portfolio. I build interactive dashboards,
+      prepare and validate datasets, and use analytical tools
+      to uncover insights that support business decisions.
+    </p>
+    <a class="button" href="#projects">Explore My Projects</a>
+  </div>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p class="intro">
+        I'm Paul, a data analytics enthusiast building practical
+        projects in business intelligence, reporting, and data
+        visualization. My portfolio highlights hands-on work with
+        Power BI, Power Query, DAX, and data modeling.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <span class="skill">Power BI</span>
+        <span class="skill">Power Query</span>
+        <span class="skill">DAX</span>
+        <span class="skill">Data Cleaning</span>
+        <span class="skill">Data Modeling</span>
+        <span class="skill">Data Validation</span>
+        <span class="skill">Dashboard Design</span>
+        <span class="skill">Business Intelligence</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Project</h2>
+      <article class="project">
+        <div class="project-top">
+          <h3>Bike Sales &amp; Profitability Analytics</h3>
+          <p>Power BI | Power Query | DAX | Data Modeling</p>
+        </div>
+        <div class="project-body">
+          <p>
+            Developed a two-page Power BI report analyzing
+            113,029 sales records from 2011 to 2016.
+            The dashboards explore sales, gross profit,
+            product performance, customer demographics,
+            and geographic trends.
+          </p>
+
+          <div class="stats">
+            <div class="stat">
+              <strong>$95.17M</strong><span>Total Revenue</span>
+            </div>
+            <div class="stat">
+              <strong>$42.12M</strong><span>Gross Profit</span>
+            </div>
+            <div class="stat">
+              <strong>44.26%</strong><span>Gross Margin</span>
+            </div>
+            <div class="stat">
+              <strong>113,029</strong><span>Sales Records</span>
+            </div>
+          </div>
+
+          <h3>Project Highlights</h3>
+          <p>
+            Cleaned and validated sales data in Power Query,
+            developed financial calculations, built a
+            star-schema-style data model, and created DAX
+            measures for key performance indicators and
+            year-over-year growth.
+          </p>
+          <p>
+            The report includes an Executive Sales &amp; Product
+            Performance page and a Customer &amp; Geographic
+            Insights page.
+          </p>
+          <p class="note">
+            Dashboard screenshots and project PDF documents
+            will be added to this section.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section id="insights">
+      <h2>Key Business Insights</h2>
+      <div class="insights">
+        <div class="insight">
+          <h3>Sales &amp; Profitability</h3>
+          <p>
+            The business generated $95.17M in revenue and
+            $42.12M in gross profit, with a 44.26% margin.
+          </p>
+        </div>
+        <div class="insight">
+          <h3>Revenue Trends</h3>
+          <p>
+            Annual revenue peaked in 2015 at $22.40M.
+            The July 2016 decline requires further investigation.
+          </p>
+        </div>
+        <div class="insight">
+          <h3>Product Performance</h3>
+          <p>
+            Bikes contributed approximately 73% of total
+            revenue. Road-150 Red, 62 led individual products
+            by revenue.
+          </p>
+        </div>
+        <div class="insight">
+          <h3>Customer Demographics</h3>
+          <p>
+            Adults aged 35–64 contributed the largest share
+            of sales revenue, followed by ages 25–34.
+          </p>
+        </div>
+        <div class="insight">
+          <h3>Geographic Performance</h3>
+          <p>
+            The United States was the highest-revenue country,
+            while California led the state-level ranking.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <h2>Connect With Me</h2>
+        <p>
+          Explore my projects and follow my progress
+          in data analytics.
+        </p>
+        <a class="button"
+           href="https://github.com/TamuforPaul"
+           target="_blank" rel="noopener noreferrer">
+          View My GitHub
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Paul T. | Data Analytics Portfolio
+  </footer>
+</body>
+</html>
